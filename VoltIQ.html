@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VoltIQ – Smart Energy Grid Analytics</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: radial-gradient(circle at center, #0a0a0a, #000000);
+      color: #ffffff;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 800px;
+      padding: 0 1rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #fff;
+      animation: flashGlow 3s infinite ease-in-out;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #cccccc;
+      margin-top: 1rem;
+      animation: fadeUp 2s ease-out;
+    }
+
+    @keyframes flashGlow {
+      0% {
+        text-shadow: 0 0 5px #00ffcc;
+      }
+      50% {
+        text-shadow: 0 0 20px #00ffcc, 0 0 30px #00ccff;
+      }
+      100% {
+        text-shadow: 0 0 5px #00ffcc;
+      }
+    }
+
+    @keyframes fadeUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .pulse-ring {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: rgba(0, 255, 200, 0.05);
+      animation: pulse 4s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(0.9);
+        opacity: 0.4;
+      }
+      50% {
+        transform: scale(1.2);
+        opacity: 0.2;
+      }
+      100% {
+        transform: scale(0.9);
+        opacity: 0.4;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="pulse-ring"></div>
+  <div class="container">
+    <h1>Welcome to VoltIQ ⚡</h1>
+    <p>AI-powered analytics for smart energy grids — balance, predict, and optimize power like never before.</p>
+  </div>
+</body>
+</html>
